@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+                    font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #CBF3F0;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+            color: #333;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        select,
+        textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        input:required:invalid,
+        select:required:invalid {
+            border-color: #ff9999;
+        }
+        
+        input:required:valid,
+        select:required:valid {
+            border-color: #99ff99;
+        }
+        }
+    </style>
+</head>
+<body>
+    <HEAder>MY INFORMATION</HEAder>
+    <form>
+        <fieldset>
+            <legend>Information:</legend>
+            <div>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required placeholder="Enter your full name:"><br><br>
+            <label for="major">Major:</label>
+            <select id="major" name="major" required>
+                <option value="">EYL</option>
+                <option value="cs">QANDALA</option>
+                <option value="it">MOGADISHU</option>
+            </select><br><br>
+            <input type="radio" id="male" name="jinsiga" value="male" required checked>
+                <label for="male">male</label>
+                <input type="radio" id="Female" name="jinsiga" value="Female">
+                <label for="Female">Female</label><br><br>
+                <label>Mid dooro:</label>
+            <div>
+                <input type="checkbox" id="ciyaaraha" name=" Maxa jaceshahay" value="ciyaaraha">
+                <label for="ciyaaraha">Caasimadda</label>
+            </div>
+            <input type="checkbox" id="Xeybaha" name="jacaylka" value="Xeybaha">
+                <label for="akhrinta">Xeybaha</label>
+                <input type="checkbox" id="code" name="jacaylka" value="code">
+                <label for="code">Magaloyinka</label><br><br>
+                <label for="faallooyin">Comment:</label>
+            <textarea id="faallooyin" name="faallooyin" rows="4"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </div>
+
+
+        </fieldset>
+    </form>
+    <a href="index.html">Back index</a>&nbsp;&nbsp;
+     <a href="gallery.html"></a>&nbsp;&nbsp;
+     <a href="booking.html"></a>&nbsp;&nbsp;
+    <a href="help.html"></a>&nbsp;&nbsp;
+    <a href="about.html"></a>&nbsp;&nbsp;
+</body>
+</html>
